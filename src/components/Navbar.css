@@ -1,32 +1,19 @@
-body {
-  margin: 0;
-  background: #f7f7f7;
-  font-family: Arial, sans-serif;
-}
-
 .navbar {
   background: #222;
   padding: 12px 20px;
-  display: flex;
   color: white;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar a {
   color: white;
-  margin-left: 16px;
+  margin-left: 20px;
   text-decoration: none;
   font-weight: 500;
 }
 
 .navbar a:hover {
   text-decoration: underline;
-}
-
-pre {
-  background: #ffffff;
-  padding: 10px;
-  border-radius: 6px;
-  overflow: auto;
 }
