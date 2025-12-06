@@ -24,6 +24,7 @@ import {
 import InfoCard from "../components/InfoCard";
 import SectionHeader from "../components/SectionHeader";
 import TimestampCard from "../components/TimestampCard";
+import LocationMap from "../components/LocationMap";
 
 const Details = () => {
   const [data, setData] = useState(null);
@@ -104,7 +105,30 @@ const Details = () => {
             data={payload?.location}
           />
         </Grid>
+       
       </Grid>
+
+       <Grid item xs={12} md={12} lg={12}>
+          <Box mb={1}>
+            <Typography
+              variant="h6"
+              fontWeight={700}
+              display="flex"
+              alignItems="center"
+            >
+              <Map1
+                size="24"
+                color="#FF647C"
+                variant="Bold"
+                style={{ marginRight: 8 }}
+              />
+              Live Location
+            </Typography>
+          </Box>
+
+          {/* Pass the location object from your API payload */}
+          <LocationMap location={payload.location} />
+        </Grid>
 
       {/* ===================== INSTALLED APPS ===================== */}
       <SectionHeader title="Installed Applications" />
